@@ -1,0 +1,19 @@
+.home-header {
+  width: 100%;
+  background: linear-gradient(180deg, #2aa06f 0%, #008f5a 100%);
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  padding-bottom: 8rem;
+}
+
+.home-header h1 {
+  font-size: clamp(2.3rem, 5vw, 4rem);
+}
+
+.welcome-divider {
+  width: 100%;
+  max-width: 420px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+}
