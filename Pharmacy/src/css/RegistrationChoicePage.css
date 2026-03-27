@@ -1,0 +1,9 @@
+.register-choice-section {
+  margin-top: -90px;
+}
+
+.register-choice-card {
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}

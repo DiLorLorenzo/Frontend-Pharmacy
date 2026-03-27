@@ -8,7 +8,7 @@ function Header() {
         <Row className="justify-content-center">
           <Col xs={12} sm={10} md={8} lg={6} xl={5}>
             <div className="text-center">
-              <h4 className="fw-semibold mb-5">DeliveryPharma</h4>
+              <h4 className="fw-semibold mb-5">ApoTech</h4>
               <h1 className="fw-bold mb-3">Benvenuto!</h1>
               <div className="welcome-divider mx-auto"></div>
             </div>

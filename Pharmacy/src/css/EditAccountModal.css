@@ -1,0 +1,57 @@
+/* Modal container */
+.modal-content {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.modal-header {
+  border-bottom: none;
+  padding: 20px 24px;
+}
+
+.modal-title {
+  font-weight: 600;
+  color: #198754;
+}
+
+/* Body */
+.modal-body {
+  padding: 20px 24px;
+}
+
+/* Input */
+.modal-body .form-control {
+  border-radius: 12px;
+  padding: 12px 14px;
+  border: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+}
+
+.modal-body .form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.15rem rgba(25, 135, 84, 0.15);
+}
+
+/* Footer */
+.modal-footer {
+  border-top: none;
+  padding: 16px 24px;
+}
+
+/* Bottone annulla */
+.modal-footer .btn-secondary {
+  border-radius: 12px;
+}
+
+/* Bottone salva */
+.modal-footer .btn-success {
+  border-radius: 12px;
+  background-color: #198754;
+  border: none;
+}
+
+.modal-footer .btn-success:hover {
+  background-color: #157347;
+}

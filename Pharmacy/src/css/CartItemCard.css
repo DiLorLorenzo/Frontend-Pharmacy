@@ -1,0 +1,56 @@
+.cart-item-card {
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.cart-item-image {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid #e9ecef;
+}
+
+.cart-item-name {
+  color: #212529;
+  font-weight: 600;
+}
+
+.cart-item-pharmacy {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.cart-item-price {
+  color: #198754;
+  font-weight: 700;
+}
+
+.quantity-controls {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 4px;
+  gap: 8px;
+}
+
+.quantity-btn {
+  border: none;
+  border-radius: 10px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-value {
+  min-width: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: #212529;
+}
+
+.remove-btn {
+  border-radius: 10px;
+}

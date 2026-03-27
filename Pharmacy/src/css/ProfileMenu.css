@@ -1,0 +1,37 @@
+.profile-menu {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  background: white;
+}
+
+.profile-menu-item {
+  border: none;
+  padding: 16px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.profile-menu-item:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.profile-menu-item:hover {
+  background-color: #f8f9fa;
+  color: #198754;
+}
+
+.arrow {
+  font-size: 18px;
+  color: #999;
+}
+
+/* Logout */
+.logout {
+  color: #dc3545;
+}
+
+.logout:hover {
+  background-color: #fff5f5;
+  color: #dc3545;
+}

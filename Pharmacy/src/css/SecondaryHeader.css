@@ -1,0 +1,25 @@
+.secondary-header {
+  background: linear-gradient(180deg, #2aa06f 0%, #198754 100%);
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* bottone back */
+.back-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* titolo */
+.header-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,28 @@
+.searchbar-container {
+  background: #198754;
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 0
+}
+
+.searchbar-icon {
+  background: #198754;
+  border: none;
+  color: white;
+}
+
+.searchbar-input {
+  border: none;
+  background: #198754;
+  color: white;
+}
+
+.searchbar-input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.searchbar-input:focus {
+  box-shadow: none;
+  background: #198754;
+  color: white;
+}

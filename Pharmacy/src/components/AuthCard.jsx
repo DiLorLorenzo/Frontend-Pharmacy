@@ -16,7 +16,7 @@ function AuthCard() {
             Accedi
           </Button>
 
-          <Button variant="outline-success" size="lg">
+          <Button as={Link} to="/register" variant="outline-success" size="lg">
             Registrati
           </Button>
         </div>

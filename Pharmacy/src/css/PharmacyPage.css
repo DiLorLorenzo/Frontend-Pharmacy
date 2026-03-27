@@ -1,0 +1,9 @@
+.pharmacy-page {
+  width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 90px;
+}
+
+.pharmacy-content-section {
+  margin-top: -90px;
+}

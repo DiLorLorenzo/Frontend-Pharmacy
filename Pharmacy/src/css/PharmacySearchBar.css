@@ -1,0 +1,25 @@
+.pharmacy-search-wrapper {
+  position: relative;
+}
+
+.search-results-list {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+.search-result-item {
+  border: none;
+  padding: 14px 16px;
+  color: #212529;
+}
+
+.search-result-item:not(:last-child) {
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.search-result-item:hover {
+  background-color: #f8f9fa;
+  color: #198754;
+}

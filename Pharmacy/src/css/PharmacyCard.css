@@ -1,0 +1,30 @@
+.pharmacy-card {
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card-title-row {
+  color: #198754;
+}
+
+/* Avatar */
+.pharmacy-avatar {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid #198754;
+}
+
+/* Nome */
+.pharmacy-name {
+  color: #212529;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+/* Indirizzo */
+.pharmacy-address {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
