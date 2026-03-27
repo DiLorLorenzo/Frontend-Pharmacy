@@ -12,31 +12,39 @@ function LoginPage() {
       const response = await fetch("http://localhost:8080/api/auth/login", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json"
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(data)
       });
 
-      const result = await response.json();
+      // debug 
+      console.log("STATUS:", response.status);
+
+      const text = await response.text();
+      console.log("RAW RESPONSE:", text);
+
+      const result = text ? JSON.parse(text) : {};
 
       if (!response.ok) {
-        throw new Error(result.message || "Errore durante il login");
+        throw new Error(result.message || `Errore login: ${response.status}`);
       }
 
-      console.log("Login riuscito:", result);
-
-      
-      localStorage.setItem("userEmail", result.email);
+      // salva token
+      localStorage.setItem("token", result.token);
       localStorage.setItem("userRole", result.role);
+      localStorage.setItem("userEmail", result.email);
 
-      // Redirect in base al ruolo
+      //  redirect in base al ruolo
       if (result.role === "CUSTOMER") {
         navigate("/customer");
       } else if (result.role === "PHARMACY") {
         navigate("/pharmacy");
       } else if (result.role === "ADMIN") {
         navigate("/admin");
+      } else {
+        navigate("/");
       }
+
     } catch (error) {
       console.error("Errore login:", error.message);
       alert(error.message);

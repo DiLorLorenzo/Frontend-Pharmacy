@@ -6,13 +6,11 @@ function ProfileCard({ user }) {
   return (
     <Card className="profile-card border-0">
       <Card.Body className="text-center px-4 px-sm-5 py-5">
-
         <div className="profile-avatar d-flex align-items-center justify-content-center mx-auto mb-4">
           <PersonCircle size={72} />
         </div>
 
         <div className="profile-info">
-
           <p className="mb-3">
             <strong>Nome:</strong> {user.nome}
           </p>
@@ -21,12 +19,18 @@ function ProfileCard({ user }) {
             <strong>Cognome:</strong> {user.cognome}
           </p>
 
-          <p className="mb-0">
+          <p className="mb-3">
             <strong>Codice fiscale:</strong> {user.codiceFiscale}
           </p>
 
-        </div>
+          <p className="mb-3">
+            <strong>Email:</strong> {user.email}
+          </p>
 
+          <p className="mb-0">
+            <strong>Cellulare:</strong> {user.phoneNumber}
+          </p>
+        </div>
       </Card.Body>
     </Card>
   );

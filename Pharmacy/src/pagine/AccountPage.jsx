@@ -1,11 +1,12 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useState } from "react";
+import SecondaryHeader from "../components/SecondaryHeader";
 import AccountMenu from "../components/AccountMenu";
 import EditAccountModal from "../components/EditAccountModal";
 import CustomerNavbar from "../components/CustomerNavbar";
 
-function AccountPage() {
 
+function AccountPage() {
   const [showModal, setShowModal] = useState(false);
   const [modalType, setModalType] = useState("");
 
@@ -20,20 +21,15 @@ function AccountPage() {
   };
 
   return (
-    <div className="bg-light min-vh-100 d-flex align-items-center justify-content-center pb-5">
+    <div className="account-page-wrapper bg-light min-vh-100">
+      <SecondaryHeader title="Account" />
 
-      <Container fluid className="px-3 px-sm-4">
-
-        <Row className="justify-content-center w-100">
-
+      <Container fluid className="account-menu-section px-3 px-sm-4">
+        <Row className="justify-content-center">
           <Col xs={12} sm={10} md={8} lg={6} xl={5}>
-
             <AccountMenu openModal={openModal} />
-
           </Col>
-
         </Row>
-
       </Container>
 
       <EditAccountModal
@@ -43,7 +39,6 @@ function AccountPage() {
       />
 
       <CustomerNavbar />
-
     </div>
   );
 }
