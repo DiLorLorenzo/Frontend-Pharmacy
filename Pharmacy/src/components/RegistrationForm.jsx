@@ -61,7 +61,6 @@ function RegistrationForm({ title, fields, buttonText, onSubmit }) {
     }
 
     setError("");
-    console.log("Dati form:", formData);
 
     if (onSubmit) {
       onSubmit(formData);
